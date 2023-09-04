@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+    <!-- <link rel="stylesheet" href="./styles/style2.css"> -->
+    <link rel="stylesheet" href=".//styles/style_P4.css">
+    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+    <title>Portfolio</title>
+</head>
+
+<body class="wrapper">
+    <!-- <div class="container"> -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid container">
+                <a class="navbar-brand mb-0 h1 fw-bolder" href="index.html">Sandeep Dhillon</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-nav">
+                        <a class="nav-link fw-bold  name-class-hover" aria-current="page" href="index.html">About Me</a>
+                        <a class="nav-link fw-bold name-class-hover" href="./resume/resume.html"
+                            target="_blank">Resume</a>
+                    </div>
+                </div>
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <!-- <button type="button" class="btn btn-outline-primary mx-3">Login</button> -->
+                    <button type="button" class="btn btn-secondary btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#RegisterModal">Check My Work</button>
+
+                    <!-- Modal Start-->
+                    <div class="modal fade" id="RegisterModal" tabindex="-1" aria-labelledby="RegisterModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="RegisterModalLabel">Check My Profiles</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body display-5">
+
+                                    <a class="nav-link fw-bold github" href="https://github.com/ssd2192"
+                                        target="_blank">GitHub</a>
+                                    <a class="nav-link fw-bold linkedin"
+                                        href="https://www.linkedin.com/in/sandeep-dhillon-cs/"
+                                        target="_blank">LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Model End -->
+                </div>
+    </header>
+    <main class=" main container">
+        <div class="div--aboutme">
+            <div class="aboutme--headpic">
+                <img src="./images/profile.JPG" alt="Profile Pic" class="profile--pic">
+            </div>
+            <div class="aboutme--head">
+                <h2>About Me</h2>
+                <p class="about--details">For over a decade I have studied the Computer Engineering, Software
+                    Architectures, Data Structures then I ended up in an Amazon Fullfilment Center. <br>
+                    Currently,<strong> Learning
+                        frontend-programming to join Software Development</strong> </p>
+            </div>
+
+        </div>
+        <div class="div--contact">
+            <h2 class="contactme--head">Contact Me</h2>
+            <form action="_blank" method="get">
+                <ul class="ul--style">
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    </li>
+                    <li>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="27" rows="12" placeholder="Your Message"
+                            required></textarea>
+                    </li>
+                    <li>
+                        <button class="submit--button" type="button" value="Submit">Send Message</button>
+                    </li>
+                </ul>
+
+            </form>
+        </div>
+
+        <div class="div--skills">
+            <h2>Experience and Education</h2>
+            <ul class="ul--style experience">
+                <li>Process Assistant at Amazon Fullfilment Center</li>
+                <li>Web Development at Correlation One</li>
+                <li>Computer Software and Database Development Certificate</li>
+            </ul>
+        </div>
+
+        <div class="div--tech">
+            <h2>Tech Stack</h2>
+            <ul class="ul--style">
+                <li>HTML, CSS, JavaScript, Java, Python</li>
+                <li>SQL</li>
+                <li>Microsoft Office, VS Code, Codio, Jira </li>
+            </ul>
+        </div>
+
+    </main>
+    <footer class=" footer container">
+        <div class="footer__content">
+            Portfolio - Sandeep Dhillon @2023
+        </div>
+    </footer>
+    <!-- </div> -->
+
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
